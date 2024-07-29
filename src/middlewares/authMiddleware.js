@@ -5,7 +5,7 @@ import { auth } from 'express-oauth2-jwt-bearer'
 const auth0JwtCheck = auth({
   audience: 'https://sso-auth0-node-react.onrender.com',
   issuerBaseURL: 'https://dev-lx6d6jac11158744.us.auth0.com/',
-  tokenSigningAlg: 'RS256'
+  tokenSigningAlg: 'RS256' 
 })
 
 export const authMiddleware = {
